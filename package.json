@@ -10,6 +10,10 @@
     "type": "git",
     "url": "git+https://qiankunxie@github.com/qiankunxie/fabric-angular.git"
   },
+    "keywords": [
+    "fabric",
+    "angular"
+  ],
   "author": "Qiankun Xie <xieqiankun@wustl.edu>",
   "license": "MIT",
   "bugs": {
