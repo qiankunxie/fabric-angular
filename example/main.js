@@ -1,6 +1,6 @@
 angular.module('myApp', ['fabricAngular'])
 
-.controller('TestController', ['$scope', function($scope) {
+.controller('TestController', ['$scope', 'FabricLink', function($scope, FabricLink) {
 
 
 }])
