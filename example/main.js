@@ -4,7 +4,10 @@ angular.module('myApp', ['fabricAngular'])
   var canvas;
 
   function render () {
-   var total = 1000,
+    if (!canvas) {
+      return;
+    }
+   var total = 100,
       blobs = new Array(total),
       myfps = 60,
       updateTime = 1000 / myfps,

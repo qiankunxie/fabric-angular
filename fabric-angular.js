@@ -86,7 +86,6 @@
                     });
 
                     canvasInstance.setDimensions({width: width, height: height});
-
                     FabricLink.execute(canvasInstance);
                 }
             };
