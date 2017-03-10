@@ -1,6 +1,6 @@
 {
   "name": "fabric-angular",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A module for inject fabric.js into angular env",
   "main": "fabric-angular.js",
   "scripts": {
