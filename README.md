@@ -14,19 +14,19 @@ This is for triggering fabric.js in angular1 scope.
 3. load fabric-angular.js into your project
 
 ## Code Example
-1. index.html:
+* index.html
 ```html
 	 	<script type="text/javascript" src="./lib/angular.min.js"></script>
 	 	<script type="text/javascript" src="./lib/fabric.min.js"></script>
 	 	<script type="text/javascript" src="./lib/fabric-angular.js"></script>
 ```
 
-2. angular.module:
+* angular.module:
 ```js
 var myapp = angular.module('myapp', ['fabricAngular']);
 ```
 
-3. controller: 
+* controller: 
 ```js
 .controller('TestController', ['$scope', 'FabricLink','yourFabricRenderSrvc', function($scope, FabricLink, yourFabricRenderSrvc) {
   // set link function
@@ -40,7 +40,7 @@ var myapp = angular.module('myapp', ['fabricAngular']);
   }
 }]);
 ```
-4. yourFabricRenderSrvc:
+* yourFabricRenderSrvc:
 ```js
 .factory('FabricRender', ['fabric', function(fabric){
   var canvas;
