@@ -1,0 +1,19 @@
+{
+  "name": "fabric-angular",
+  "version": "1.0.0",
+  "description": "A module for inject fabric.js into angular env",
+  "main": "fabric-angular.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://qiankunxie@github.com/qiankunxie/fabric-angular.git"
+  },
+  "author": "Qiankun Xie <xieqiankun@wustl.edu>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/qiankunxie/fabric-angular/issues"
+  },
+  "homepage": "https://github.com/qiankunxie/fabric-angular#readme"
+}
