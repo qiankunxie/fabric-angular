@@ -9,18 +9,43 @@ This is for triggering fabric.js in angular1 scope.
 [Live Example](https://qiankunxie.github.io/fabric-angular/example/) - Achieved by using angular framework, fabric.js and angular-fabric
 
 ## Installation
-1. load farbic.js and angular.js library into your project.
-2. npm: `npm install fabric-angular --save` or copy fabric-angular.js file into your project lib.
-3. load fabric-angular.js into your project
+* Webpack
 
-## Code Example
-* index.html
-```html
-	 	<script type="text/javascript" src="./lib/angular.min.js"></script>
-	 	<script type="text/javascript" src="./lib/fabric.min.js"></script>
-	 	<script type="text/javascript" src="./lib/fabric-angular.js"></script>
+Include dependencies:
+```
+dependency: {
+    "fabric": "1.7.x",
+    "angular": "*",
+    "fabric-angular": "*"
+}
 ```
 
+Use require() to load module into entry_point file:
+```js
+var angular = require("angular");
+require("fabric");
+require("fabric-angular");
+```
+
+Run webpack cli to generate bundle file:
+`webpack ./your_entry_point.js bundle.js`
+
+Include bundle.js into your index.html:
+`<script type="text/javascript" src="bundle.js"></script>`
+
+* Direct way
+
+load farbic.js and angular.js library into your project.
+
+npm install: `npm install fabric-angular --save` or copy fabric-angular.js file into your project lib.
+
+Load fabric-angular.js into your project
+```html
+	 <script type="text/javascript" src="./lib/angular.min.js"></script>
+	 <script type="text/javascript" src="./lib/fabric.min.js"></script>
+	 <script type="text/javascript" src="./lib/fabric-angular.js"></script>
+```
+## Code Example
 * angular.module:
 ```js
 var myapp = angular.module('myapp', ['fabricAngular']);
@@ -59,6 +84,10 @@ var myapp = angular.module('myapp', ['fabricAngular']);
     // do some clean up by exporting destory function
   };
 }])
+```
+* template
+```html
+<fabric-canvas options="options"></fabric-canvas>
 ```
 
 ## Motivation
