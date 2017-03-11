@@ -6,8 +6,6 @@ This is for triggering fabric.js in angular1 scope.
 2. Wrap creation of canvas in directive by injecting fabric through fabric service.
 3. Using link function to inject the canvas instance into your render service. Make sure create link function before angular rendering directive
 
-[Live Example](https://qiankunxie.github.io/fabric-angular/example/) - Achieved by using angular framework, fabric.js and angular-fabric
-
 ## Installation
 * Webpack
 
@@ -33,6 +31,9 @@ Run webpack cli to generate bundle file:
 Include bundle.js into your index.html:
 `<script type="text/javascript" src="bundle.js"></script>`
 
+[Live Example](https://qiankunxie.github.io/fabric-angular/example/webpack) - Based on webpack
+
+
 * Direct way
 
 load farbic.js and angular.js library into your project.
@@ -45,6 +46,8 @@ Load fabric-angular.js into your project
 	 <script type="text/javascript" src="./lib/fabric.min.js"></script>
 	 <script type="text/javascript" src="./lib/fabric-angular.js"></script>
 ```
+[Live Example](https://qiankunxie.github.io/fabric-angular/example/normal) - Normal
+
 ## Code Example
 * angular.module:
 ```js
