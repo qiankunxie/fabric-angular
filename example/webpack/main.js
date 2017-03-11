@@ -1,3 +1,7 @@
+var angular = require("angular");
+require("fabric");
+require("../../fabric-angular");
+
 angular.module('myApp', ['fabricAngular'])
 
 .factory('FabricRender', ['fabric', function(fabric){
@@ -16,8 +20,8 @@ angular.module('myApp', ['fabricAngular'])
       maxy = canvas.height,
       msg, startTime, prevTime, ms, frames;
 
-    canvas.setBackgroundImage('./assets/bkg.jpg');
-    fabric.Image.fromURL('./assets/blob.png', blobLoaded);
+    canvas.setBackgroundImage('../assets/bkg.jpg');
+    fabric.Image.fromURL('../assets/blob.png', blobLoaded);
 
     canvas.on('mouse:move', function(options) {
       mouse_pos = canvas.getPointer(options.e);

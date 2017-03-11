@@ -8,7 +8,7 @@
 
 	function requireFabric() {
 		try {
-			return require('fabricjs'); // Using nw.js or browserify?
+			return require('fabric'); // Using webpack or browserify?
 		} catch (e) {
 			throw new Error('Please install fabric via npm.');
 		}

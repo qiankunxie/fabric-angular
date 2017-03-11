@@ -1,8 +1,11 @@
 {
   "name": "fabric-angular",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A module for inject fabric.js into angular env",
   "main": "fabric-angular.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,7 +13,7 @@
     "type": "git",
     "url": "git+https://qiankunxie@github.com/qiankunxie/fabric-angular.git"
   },
-    "keywords": [
+  "keywords": [
     "fabric",
     "angular"
   ],
@@ -19,5 +22,13 @@
   "bugs": {
     "url": "https://github.com/qiankunxie/fabric-angular/issues"
   },
-  "homepage": "https://github.com/qiankunxie/fabric-angular#readme"
+  "devDependencies": {
+    "fabric": "1.7.x",
+    "angular": "*"
+  },
+  "homepage": "https://github.com/qiankunxie/fabric-angular#readme",
+  "dependencies": {
+    "angular": "^1.6.3",
+    "fabric": "^1.7.7"
+  }
 }
