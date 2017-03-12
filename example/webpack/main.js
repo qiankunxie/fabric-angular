@@ -1,6 +1,6 @@
 var angular = require("angular");
 require("fabric");
-require("../../fabric-angular");
+require("../../fabric-angular"); // use require("fabric-angular") in real app
 
 angular.module('myApp', ['fabricAngular'])
 

@@ -26,9 +26,5 @@
     "fabric": "1.7.x",
     "angular": "*"
   },
-  "homepage": "https://github.com/qiankunxie/fabric-angular#readme",
-  "dependencies": {
-    "angular": "^1.6.3",
-    "fabric": "^1.7.7"
-  }
+  "homepage": "https://github.com/qiankunxie/fabric-angular#readme"
 }
